@@ -1,41 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
   color: #414141;
-  background-color: #f0efe6;
-  font-family: Arial;
+  background-color: #FFF7F8;
+  font-family: Tahoma;
 }
 
 h1 {
-  margin: 20px auto;
-  width: 500px;
+  width: 100%;
   background-color: #87a5d4;
   font-family: Garamond, monospace;
   text-align: center;
-  border: 1px solid #000000;
-  border-right: 4px solid #000000;
-  border-bottom: 5px solid #000000;
   font-size: 48px;
 }
 
 p {
-  font-family: Arial;
+  font-family: Tahoma;
 }
 
 .navbar {
   list-style-type: none;
-  margin: 0;
-  padding: 0;
-  background-color: #94acb5
+  display: flex;
+  width: 100%;
+  background-color: #A9F0D1;
+  justify-content: space-around;
 }
 
 .navbar li {
-  display: inline;
-  font-size: 2em;
-  font-family: cursive;
-  width: 20px;
-  padding-left: 10px;
-  padding-right: 10px;
-  margin: 10px 40px;
-
+  display: flex;
+  font-size: 1.5em;
+  font-family: Tahoma;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 3%;
+  padding-right: 3%;
 }
 
 .navbar li:hover {
@@ -60,4 +61,81 @@ a:visited, a:link {
 
 #home:hover {
   background-color: #287842;
+}
+.content-container {
+  display: flex;
+}
+
+.about {
+  background-color: #FFA69E;
+  height: 350px;
+  width: 40%;
+  display: flex;
+  align-items: center;
+}
+
+.about p {
+  font-size: 40px;
+  padding-left: 5px;
+  line-height: 2.0;
+}
+
+.colors {
+  display: flex;
+  height: 350px;
+  background-color: blue;
+  width: 60%;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.color {
+  height: 50%;
+  width: 33.33%;
+  display: flex;
+}
+
+.color1 {
+  background-color: #8C5E58;
+}
+.color2 {
+  background-color: #B08782;
+}
+.color3 {
+  background-color: #C8ABA7;
+}
+.color4 {
+  background-color: #E0CFCD;
+}
+.color5 {
+  background-color: #F7F3F2;
+}
+
+.footer-container {
+  height: 40px;
+  display: flex;
+  background-color: #FF7E6B;
+  width: 100%;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 40px;
+}
+
+@media only screen and (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    width:100%;
+  }
+  .content-container {
+    flex-direction: column;
+
+  }
+  .about {
+    width: 100%;
+  }
+  .colors {
+    width: 100%;
+  }
+
 }
